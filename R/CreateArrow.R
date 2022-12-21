@@ -1935,7 +1935,7 @@ createArrowFiles <- function(
       
       #Determine Ranges and RG Pre-Allocation
       chr <- uniqueChr[x]
-      ix <- BiocGenerics::which(paste0(chunkChr) == paste0(chr))
+      ix <- BiocGenerics::which(paste0(chunkChr) == chr)
 
       if(threads == 1){
 
